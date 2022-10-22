@@ -59,3 +59,10 @@ main{
 .landing__text--better{
     font-size: 60px;
 }
+
+.text__position2{
+    position: absolute;
+    color: darkorange;
+    top: 50vh;
+    right: 20px;
+}
