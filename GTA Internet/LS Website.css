@@ -65,4 +65,12 @@ main{
     color: darkorange;
     top: 50vh;
     right: 20px;
+    z-index: 1;
+}
+
+.wave{
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: translateY(66%);
 }
