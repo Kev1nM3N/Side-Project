@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 
@@ -21,7 +22,8 @@ nav{
 }
 
 .first__line{
-    border: solid darkblue;
+    color: rgb(32, 124, 147);
+    border: solid;
     max-width: 900px;
     margin: 0 auto;
 }
@@ -74,12 +76,16 @@ main{
 
 .text__position2{
     position: absolute;
-    transform: translateY(350%);
-    color: darkorange;
+    transform: translateY(360%);
+    font-size: 19px;
     text-align: right;
-    padding: 30px 30px;
+    padding: 31px 10px;
     width: 100%;
     z-index: 1;
+}
+
+.secondary__text{
+    color: orange;
 }
 
 
@@ -88,27 +94,30 @@ main{
 
 .links{
     float: right;
-    width: 300px;
+    width: 200px;
     text-align: center;
 }
 
 .link{
     text-decoration: none;
-    font-size: 25px;
-    line-height: 1.6em;
+    font-size: 22px;
+    line-height: 1.8em;
+    color: rgb(53, 169, 198);
+
 }
 
 .ending__text{
-    color: darkorange;
+    color: orange;
     font-size: 30px;
 }
 
 .second__line{
-    border: 1px solid darkblue;
+    color: rgb(37, 132, 161);
+    border: 1px solid ;
 }
 
 p{
-    color: rgb(68, 103, 217);
+    color: rgb(53, 169, 198);
 }
 
 /*Smartphones and Tablets*/
@@ -116,10 +125,6 @@ p{
 @media (max-width: 800px){
     .text__position{
         font-size: 44px;
-    }
-
-    .text__position2{
-        font-size: 14px;
     }
 
     .links{
