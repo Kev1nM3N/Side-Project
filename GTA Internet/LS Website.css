@@ -22,7 +22,7 @@ nav{
 
 .first__line{
     color: rgb(32, 124, 147);
-    border: solid;
+    border: 0.8px solid;
     max-width: 900px;
     margin: 0 auto;
 }
