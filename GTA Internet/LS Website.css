@@ -109,7 +109,10 @@ main{
     font-size: 22px;
     line-height: 1.8em;
     color: rgb(53, 169, 198);
+}
 
+.link:active{
+    color: yellow;
 }
 
 .ending__text{
