@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 
 
@@ -62,8 +61,13 @@ main{
     text-align: center;
 }
 
+.landing__text{
+    font-family: sans-serif;
+}
+
 .landing__text--better{
     font-size: 55px;
+    font-family: sans-serif;
 }
 
 .wave{
@@ -76,6 +80,7 @@ main{
 
 .text__position2{
     position: absolute;
+    font-family: sans-serif;
     transform: translateY(360%);
     font-size: 19px;
     text-align: right;
@@ -100,6 +105,7 @@ main{
 
 .link{
     text-decoration: none;
+    font-family: sans-serif;
     font-size: 22px;
     line-height: 1.8em;
     color: rgb(53, 169, 198);
@@ -109,6 +115,7 @@ main{
 .ending__text{
     color: orange;
     font-size: 30px;
+    font-family: sans-serif;
 }
 
 .second__line{
@@ -118,6 +125,7 @@ main{
 
 p{
     color: rgb(53, 169, 198);
+    font-size: 19px;
 }
 
 /*Smartphones and Tablets*/
