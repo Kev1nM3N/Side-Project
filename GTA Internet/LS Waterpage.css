@@ -142,16 +142,12 @@ p{
         transform: translateY(-5vh);
     }
 
+
     .almost__part{
-        max-width: 500px;
-        margin: 0 auto;
         padding: 24px;
         text-align: center;
     }
 
-    .last__part{
-        max-width: 500px;
-    }
 
     .ending__para{
         max-width: 500px;
@@ -167,9 +163,6 @@ p{
         font-size: 50px;
     }
 
-    .almost__part{
-        max-width: 200px;
-    }
 
     .last__part{
         max-width: 400px;
