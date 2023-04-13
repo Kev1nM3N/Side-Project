@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h4 {
@@ -10,6 +10,7 @@ h4 {
 }
 
 nav {
+    position: relative;
     background-color: #438bc2;
     padding: 16px 0;
 }
@@ -52,5 +53,34 @@ nav .day {
 }
 
 .right-subox {
-    margin-left: 42px;
+    margin-left: 36px;
+}
+
+nav .searchandfind {
+    max-width: 1040px;
+    outline: 2px solid darkgoldenrod;
+    margin: 0 auto;
+}
+
+
+nav .search {
+    width: 70%;
+    border-radius: 6px;
+    padding: 10px;
+    border-style: none;
+}
+
+nav .search::placeholder {
+    color: black;
+    font-weight: 600;
+}
+
+nav .findbutton {
+    padding: 9px 75px;
+    border-radius: 6px;
+    margin-left: 4rem;
+    font-size: 20px;
+    background-color: #02728e;
+    color: white;
+    border-style: none;
 }
