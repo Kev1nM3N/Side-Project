@@ -119,7 +119,7 @@ nav .findbutton {
 }
 
 .guidebar {
-    outline: 2px solid red;
+    outline: 2px solid #dedfde;
     height: 3.5rem;
     background-color: #eeefee;
     display: flex;
@@ -128,5 +128,30 @@ nav .findbutton {
 .guidebar__box {
     width: 20%;
     height: 100%;
-    outline: 1px solid;
+    outline: 1px solid #dedfde;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.text__center {
+    padding-left: 20px;
+}
+
+.guidebar__box--rectangle {
+    width: 30%;
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    padding: 10px 23px;
+}
+
+.guidebar .guidebar__box--rectangle:nth-child(5) {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+.guidebar .guidebaricon {
+    margin: 0 10px;
 }
