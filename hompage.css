@@ -5,6 +5,17 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    box-shadow: 0 24px 16px 0 rgba(0,0,0,0.1) inset;
+    height: 82vh;
+}
+
+a {
+    color: #0f0f0f;
+    text-decoration: none;
+    transition: all 100ms ease-out;
+}
+
 button {
     cursor: pointer;
     border-style: none;
@@ -18,6 +29,11 @@ nav {
     position: relative;
     background-color: #438bc2;
     padding: 16px 0;
+}
+
+.row {
+    max-width: 1050px;
+    margin: auto;
 }
 
 .first__part {
@@ -48,7 +64,7 @@ nav .vinewood {
     margin-right: 16px;
     font-size: 12px;
     color: white;
-    
+    margin-bottom: 0.6rem;
 }
 
 hr {
@@ -111,6 +127,11 @@ nav .findbutton {
     font-size: 20px;
     background-color: #02728e;
     color: white;
+    transition: all 200ms ease-out;
+}
+
+nav .findbutton:hover {
+    background-color: #42a8f6;
 }
 
 .yellowborder {
@@ -120,38 +141,68 @@ nav .findbutton {
 
 .guidebar {
     outline: 2px solid #dedfde;
-    height: 3.5rem;
+    height: 4rem;
     background-color: #eeefee;
     display: flex;
 }
 
-.guidebar__box {
-    width: 20%;
+.guidebar__row {
     height: 100%;
-    outline: 1px solid #dedfde;
+    width: 100%;
+    max-width: 1050px;
+    margin: auto;
     display: flex;
-    text-align: center;
+}
+
+.guidebar__box {
+    flex: 1;
+    height: inherit;
+    display: flex;
     align-items: center;
-}
-
-.text__center {
-    padding-left: 20px;
-}
-
-.guidebar__box--rectangle {
-    width: 30%;
-    display: flex;
-    justify-content: end;
     text-align: center;
-    padding: 10px 23px;
+    border-left: 2px solid #dedfde;
 }
 
-.guidebar .guidebar__box--rectangle:nth-child(5) {
+.image__holder {
+    height: inherit;
     display: flex;
-    justify-content: flex-start;
-    padding-left: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    margin-left: 0.5rem;
 }
 
-.guidebar .guidebaricon {
-    margin: 0 10px;
+.guidebar__icon {
+    width: 100%;
 }
+
+.guidebar__icon:hover {
+    color: #42a8f6;
+}
+
+.guidebar__box:first-child {
+    border-left: none;
+}
+
+.link__holder{
+    margin: 0 1rem;
+}
+
+.guidebar__box:nth-child(3) .link__holder {
+    margin-right: 0;
+    margin-left: 0.5rem;
+}
+
+.guidebar__box:nth-child(4) .link__holder {
+    margin: 0;
+}
+
+.guidebar__box:nth-child(4) .image__holder {
+    margin-left: 0.3rem;
+}
+
+
+/**
+This is where the new section begins
+**/
+
