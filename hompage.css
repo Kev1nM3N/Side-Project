@@ -5,6 +5,11 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+    --main-background-color: #eeefee;
+    --bleet-line: #afe6f9;
+}
+
 body {
     box-shadow: 0 24px 16px 0 rgba(0,0,0,0.1) inset;
     height: 82vh;
@@ -142,7 +147,7 @@ nav .findbutton:hover {
 .guidebar {
     outline: 2px solid #dedfde;
     height: 4rem;
-    background-color: #eeefee;
+    background-color: var(--main-background-color);
     display: flex;
 }
 
@@ -209,7 +214,7 @@ This is where the new section begins
 section {
     width: 100%;
     height: 90vh;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     outline: 2px solid darkblue;
 }
 
@@ -218,6 +223,7 @@ section {
     height: 100%;
     outline: 2px solid red;
     margin: auto;
+    display: flex;
 }
 
 .main-content {
@@ -227,14 +233,123 @@ section {
 }
 
 .newsstory {
+    padding: 0 12px;
     width: 100%;
     height: 35vh;
     outline: 2px solid #02728e;
+    background-color: var(--main-background-color);
     margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    --max-lines: 3;
+}
+
+.newsstory::before {
+    content: "";
+    position: absolute;
+    height: 6rem;
+    width: 100%;
+    bottom: 36px;
+    left: 0;
+    pointer-events: none;
+    background: linear-gradient(to bottom, transparent, #f8f8f8);
+}
+
+.expand__button {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 12px;
+    font-weight: 700;
+    appearance: none;
+}
+
+.expand__button:hover {
+    color: #42a8f6;
+    cursor: pointer;
+}
+
+.expand__button::before {
+    content: "READ FULL ARTICLE";
 }
 
 .websiteminute {
+    padding: 12px;
     width: 100%;
     height: 22.6vh;
+    background-color: var(--main-background-color);
     outline: 2px solid salmon;
+}
+
+/*
+EDITING THE MAIN-CONTENT SECTION
+*/
+
+.title__heading {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.expand__text {
+    line-height: 1.5;
+    padding-bottom: 18px;
+}
+
+.weazel__container {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    width: 10rem;
+}
+
+.weazel__img {
+    width: 100%;
+}
+
+.websiteminute__container {
+    display: flex;
+    margin-top: 6px;
+}
+
+.website__heading {
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.fabien__container {
+    width: 50rem;
+}
+
+.fabien__logo {
+    width: 100%;
+}
+
+.text__container {
+    margin-left: 20px;
+}
+
+/*
+ADVERTISING SECTION
+*/
+
+.advertising {
+    margin-left: 16px;
+    height: 60vh;
+    outline: 2px solid sandybrown;
+}
+
+.sponsored__advert {
+    background-color: #438bc2;
+    text-align: center;
+    padding: 0 4px;
+}
+
+.sponsored__img--container {
+    width: 100%;
+    padding-top: 4px;
+}
+
+.sponsored__img {
+    width: 100%;
 }
