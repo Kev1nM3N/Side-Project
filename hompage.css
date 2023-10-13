@@ -353,3 +353,11 @@ ADVERTISING SECTION
 .sponsored__img {
     width: 100%;
 }
+
+.bleets__container {
+    width: 100%;
+    margin-top: 22px;
+    height: 22vh;
+    outline: 2px solid;
+    background-color: var(--main-background-color);
+}
